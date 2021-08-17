@@ -49,7 +49,10 @@
                 </a>
 
                 <div class="header__search">
-                    <div class="filter">all</div>
+                    <div class="filter">
+                        <p>All</p>
+                        <i class="material-icons">arrow_drop_down</i>
+                    </div>
                     <input type="text" placeholder="Search IMDb" />
                     <a href="#" class="search">
                         <i class="material-icons">search</i>
@@ -63,6 +66,7 @@
                     />
                 </div>
 
+                <!-- slide -->
                 <div
                     style="width: 2px; background-color: #383838; height: 32px"
                     class="slider"
@@ -149,9 +153,161 @@
                     <i class="material-icons">grid_view</i>
                     <span>All topics</span>
                 </div>
+
+                <!-- slide -->
+                <div
+                    style="width: 2px; background-color: #383838; height: 32px"
+                    class="slider"
+                ></div>
                 <a href="#">
                     <i class="material-icons">share</i>
                 </a>
+            </div>
+        </div>
+
+        <!-- show video -->
+        <div class="gallery">
+            <div class="container">
+                <div class="banner">
+                    <img
+                        class="bookmark"
+                        src="./imgs/bookmark-icon.png"
+                        alt=""
+                    />
+                    <img src="./imgs/movie-banner.png" alt="" />
+                </div>
+                <div class="trailer">
+                    <img src="./imgs/trailer-image.png" alt="" />
+                    <!-- button play trailer -->
+                    <div class="play-group">
+                        <div class="btn-play"></div>
+                        <span>Play trailer</span>
+                        <span>2:11</span>
+                    </div>
+                </div>
+                <div class="videos">
+                    <i class="material-icons">video_library</i>
+                    <span>5 Videos</span>
+                </div>
+                <div class="photos">
+                    <i class="material-icons">photo_library</i>
+                    <span>99+ Photos</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- more info -->
+        <div class="more-info">
+            <div class="container">
+                <!-- first column -->
+
+                <div class="first-column">
+                    <div class="category">
+                        <a href="#" class="btn btn-category">Action</a>
+                        <a href="#" class="btn btn-category">Crime</a>
+                        <a href="#" class="btn btn-category">Drama</a>
+                    </div>
+                    <p class="description-short">
+                        Two imprisoned men bond over a number of years, finding
+                        solace and eventual redemption through acts of common
+                        decency.
+                    </p>
+                    <div
+                        style="
+                            width: 100%;
+                            background-color: #4c4c4c;
+                            height: 1px;
+                        "
+                        class="slider"
+                    ></div>
+
+                    <!-- director -->
+                    <div class="director">
+                        <p>Director</p>
+                        <a href="#">Frank Darabont</a>
+                    </div>
+                    <div
+                        style="
+                            width: 100%;
+                            background-color: #4c4c4c;
+                            height: 1px;
+                        "
+                        class="slider"
+                    ></div>
+
+                    <!-- writer -->
+                    <div class="writers">
+                        <p>Writers</p>
+                        <span
+                            ><a href="">Stephen King</a> (short story "Rita
+                            Hayworth and Shawshank Redemption")
+                            <a href="">Frank Darabont</a> (screenplay)</span
+                        >
+                    </div>
+                    <div
+                        style="
+                            width: 100%;
+                            background-color: #4c4c4c;
+                            height: 1px;
+                        "
+                        class="slider"
+                    ></div>
+
+                    <!-- starts -->
+                    <div class="starts">
+                        <p>Starts</p>
+                        <span>
+                            <a href="#">Tim Robbins</a>
+                            <a href="#">Morgan Freeman</a>
+                            <a href="#">Bob Gunton</a>
+                        </span>
+                    </div>
+                    <div
+                        style="
+                            width: 100%;
+                            background-color: #4c4c4c;
+                            height: 1px;
+                        "
+                        class="slider"
+                    ></div>
+
+                    <!-- pro -->
+                    <div class="pro">
+                        <img src="./imgs/third-logo.png" alt="" />
+                        <span>See production, box office & company info</span>
+                        <i class="material-icons">open_in_new</i>
+                    </div>
+                </div>
+
+                <!-- second column -->
+
+                <div class="second-column">
+                    <div class="drop-down">
+                        <div class="select-current">
+                            <i class="material-icons">done</i>
+                            <span>In Watchlist</span>
+                        </div>
+                        <div class="btn btn-drop-down">
+                            <i class="material-icons">arrow_drop_down</i>
+                        </div>
+                    </div>
+                    <div class="viewer">
+                        <div class="item">
+                            <p>9.2K</p>
+                            <span>User reviews</span>
+                        </div>
+
+                        <div class="item">
+                            <p>182</p>
+                            <span>Critic reviews</span>
+                        </div>
+
+                        <div class="item meta">
+                            <p>80</p>
+                            <span>Metascore</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

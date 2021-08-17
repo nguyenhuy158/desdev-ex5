@@ -6,6 +6,7 @@
         background-color: $subBackground;
         justify-content: flex-end;
         border-radius: 4px;
+        height: 48px;
 
         ul {
             list-style-type: none;
@@ -13,16 +14,29 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            > li {
-
+            gap: 18px;
+            margin-right: 24px;
+            li {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
             }
         }
 
         .all-topic {
             display: flex;
             align-items: center;
-
+            gap: 7px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
         }
 
+        .slider {
+            margin: 0 16px;
+        }
     }
 }

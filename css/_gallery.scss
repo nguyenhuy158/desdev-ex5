@@ -1,0 +1,74 @@
+.gallery {
+    background-color: $baseBackground;
+    padding: 16px 0 24px;
+
+    .container {
+        display: grid;
+        grid-template-columns: 284fr 747fr 217fr;
+        gap: 5px 4px;
+        grid-template-areas: "banner trailer video" "banner trailer photo";
+        align-items: start;
+        justify-items: stretch;
+        overflow: hidden;
+        height: 421px;
+        // justify-items: center;
+        .banner {
+            grid-area: banner;
+            position: relative;
+            .bookmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                // width
+            }
+        }
+        .trailer {
+            grid-area: trailer;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            .play-group {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                justify-content: flex-start;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                padding: 16px;
+                // width: 100%;
+                height: 120px;
+                background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 0.8) 100%
+                );
+                .btn-play {
+                    width: 64px;
+                    height: 64px;
+                    background-image: url(../imgs/play-trailer-icon.png);
+                    background-repeat: no-repeat;
+                    &:hover {
+                        background-image: url(../imgs/play-trailer-icon-hover.png);
+                    }
+                }
+            }
+        }
+        .videos,
+        .photos {
+            // grid-area: video;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            background-color: $subBackground;
+            > span {
+                margin-top: 12px;
+            }
+        }
+    }
+}
