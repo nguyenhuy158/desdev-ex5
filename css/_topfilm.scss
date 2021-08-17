@@ -1,0 +1,100 @@
+.top-film {
+    padding: 24px 0 20px;
+    background-color: $baseBackground;
+
+    .film-name {
+        > .name {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 56px;
+        }
+        > .more {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: $secondColor;
+            margin-top: 8px;
+
+            p,
+            span {
+                color: inherit;
+            }
+
+            display: flex;
+            gap: 18px;
+
+            // > span::before,
+            // span::after {
+            //     content: ".";
+            // }
+        }
+    }
+
+    .film-score {
+        display: flex;
+        align-items: flex-start;
+        gap: 35px;
+
+        > .imdb-rating,
+        .your-rating,
+        .popularity {
+            // dis
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 14px;
+            color: $secondColor;
+            text-align: center;
+            letter-spacing: 1.2px;
+        }
+        > .imdb-rating {
+            i {
+                color: $startColor1;
+            }
+            p {
+                text-align: left;
+            }
+        }
+        > .your-rating {
+            i {
+                color: $startColor2;
+            }
+        }
+        > .popularity {
+            i {
+                color: $popularityColor;
+            }
+        }
+
+        .score {
+            margin-top: 5px;
+            display: flex;
+            justify-content: flex-start;
+
+            gap: 8px;
+
+            > .percent {
+                > .first {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                > .second {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+}

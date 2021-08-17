@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IMDB</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./css/render.css" />
+    </head>
+    <body>
+        <!--
+        <i class="material-icons">menu</i>
+        <i class="material-icons">arrow_drop_down</i>
+        <i class="material-icons">search</i>
+        <i class="material-icons">bookmark_add</i>
+        <i class="material-icons">account_circle</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">trending_up</i>
+        <i class="material-icons">grid_view</i>
+        <i class="material-icons">share</i>
+        <i class="material-icons">more_vert</i>
+        <i class="material-icons">video_library</i>
+        <i class="material-icons">photo_library</i>
+        <i class="material-icons">done</i>
+        <i class="material-icons">expand_more</i>
+        <i class="material-icons">open_in_new</i>
+        -->
+
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <!--     logo -->
+                <div class="header__logo">
+                    <img
+                        src="https://i.postimg.cc/bwJ5Kc8X/main-logo.png"
+                        alt=""
+                    />
+                </div>
+                <!-- logo -->
+
+                <a href="#" class="header__menu">
+                    <i class="material-icons">menu</i>
+                    <span>menu</span>
+                </a>
+
+                <div class="header__search">
+                    <div class="filter">all</div>
+                    <input type="text" placeholder="Search IMDb" />
+                    <a href="#" class="search">
+                        <i class="material-icons">search</i>
+                    </a>
+                </div>
+
+                <div class="header__pro">
+                    <img
+                        src="https://i.postimg.cc/g0LT2VnN/second-logo.png"
+                        alt=""
+                    />
+                </div>
+
+                <div
+                    style="width: 2px; background-color: #383838; height: 32px"
+                    class="slider"
+                ></div>
+
+                <a class="header__watch">
+                    <i class="material-icons">bookmark_add</i>
+                    <span>Watchlist</span>
+                    <p class="watch__number">999</p>
+                </a>
+
+                <a href="#" class="header__user">
+                    <i class="material-icons">account_circle</i>
+                    <span class="name">Huy</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                </a>
+            </div>
+        </div>
+
+        <!-- top film -->
+        <div class="top-film">
+            <div class="container">
+                <!-- info -->
+                <div class="film-name">
+                    <h2 class="name">The Shawshank Redemption</h2>
+                    <div class="more">
+                        <p class="year">1994</p>
+                        <span>R</span>
+                        <p class="duration">2h 22min</p>
+                    </div>
+                </div>
+                <!-- score -->
+                <div class="film-score">
+                    <!-- imdb rating -->
+                    <div class="imdb-rating">
+                        <p>IMDb RATING</p>
+                        <div class="score">
+                            <i class="material-icons">star</i>
+                            <div class="percent">
+                                <span class="first">9.3</span>
+                                <span class="second">/10</span>
+                                <p>2.4M</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- your rating -->
+                    <div class="your-rating">
+                        <p>YOUR RATING</p>
+                        <div class="score">
+                            <i class="material-icons">star</i>
+                            <div class="percent">
+                                <span class="first">10</span>
+                                <span class="second">/10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- popularity  -->
+                    <div class="popularity">
+                        <p>POPULARITY</p>
+                        <div class="score">
+                            <i class="material-icons">trending_up</i>
+                            <div class="percent">
+                                <span class="first">48</span>
+                                <span class="second">/10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- slide share -->
+        <div class="slide-share">
+            <div class="container">
+                <ul class="list">
+                    <li>Cast & crew</li>
+                    <li>User reviews</li>
+                    <li>Trivia</li>
+                    <li>IMDbPro</li>
+                </ul>
+                <div class="all-topic">
+                    <i class="material-icons">grid_view</i>
+                    <span>All topics</span>
+                </div>
+                <a href="#">
+                    <i class="material-icons">share</i>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

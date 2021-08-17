@@ -1,0 +1,28 @@
+.slide-share {
+    background-color: $baseBackground;
+
+    > .container {
+        padding: 16px;
+        background-color: $subBackground;
+        justify-content: flex-end;
+        border-radius: 4px;
+
+        ul {
+            list-style-type: none;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            > li {
+
+            }
+        }
+
+        .all-topic {
+            display: flex;
+            align-items: center;
+
+        }
+
+    }
+}
